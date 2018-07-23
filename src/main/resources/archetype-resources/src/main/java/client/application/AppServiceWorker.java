@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package test.client.application;
+package ${package}.client.application;
 
 import gwt.material.design.client.pwa.serviceworker.ServiceEvent;
 import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
