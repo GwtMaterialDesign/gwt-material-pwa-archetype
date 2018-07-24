@@ -1,17 +1,20 @@
 var cacheName = '{{cacheName}}';
+
 var filesToCache = [  {{#each filesToCache}}
 '{{.}}'{{#unless @last}},{{/unless}}
     {{/each}}
+        ,'service-worker.js'
     ];
 
 /**
  * The install event is your chance to cache everything you need before being able to control clients. The promise you
  * pass to event.waitUntil() lets the browser know when your install completes, and if it was successful.
  */
-self.addEventListener('install', function (event) {
-    console.log("Service Worker Installed");
-    event.waitUntil(
+self.addEventListener('install', function (e) {
+    console.log('[ServiceWorker] Install');
+    e.waitUntil(
         caches.open(cacheName).then(function (cache) {
+            console.log('[ServiceWorker] Caching app shell');
             return cache.addAll(filesToCache);
         })
     );
@@ -21,11 +24,12 @@ self.addEventListener('install', function (event) {
  * Once your service worker is ready to control clients and handle functional events like push and sync, you'll get an
  * activate event. But that doesn't mean the page that called .register() will be controlled.
  */
-self.addEventListener('activate', function (event) {
-    console.log("Service Worker Activated");
-    event.waitUntil(
+self.addEventListener('activate', function (e) {
+    console.log('[ServiceWorker] Activate');
+    e.waitUntil(
         caches.keys().then(function (keyList) {
             return Promise.all(keyList.map(function (key) {
+                console.log('[ServiceWorker] Removing old cache', key);
                 if (key !== cacheName) {
                     return caches.delete(key);
                 }
@@ -144,7 +148,7 @@ function sendMessageToClient(client, message) {
 function sendMessageToAllClients(message) {
     clients.matchAll().then(clients => {
         clients.forEach(client => {
-        sendMessageToClient(client, message);
-})
-})
+            sendMessageToClient(client, message);
+        })
+    })
 }
