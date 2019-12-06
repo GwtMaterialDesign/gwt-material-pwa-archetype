@@ -14,6 +14,7 @@ const fs = require('fs');
 var Handlebars = require('handlebars');
 
 var filesToCache = [
+    "/"
 ];
 
 browseAllFilesInDirectory(rootFolder);
