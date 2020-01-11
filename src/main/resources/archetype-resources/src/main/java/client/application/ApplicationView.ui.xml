@@ -27,7 +27,8 @@
         <m:MaterialHeader>
             <m:MaterialNavBar ui:field="navBar" activates="sidenav" backgroundColor="INDIGO">
                 <m:MaterialNavBrand fontSize="1.2em" text="${projectName}" />
-                <m:MaterialNavSection float="RIGHT">
+                <m:MaterialNavSection float="RIGHT" hideOn="NONE">
+                    <m:MaterialDarkModeToggle/>
                     <m:MaterialLink text="Link 1"/>
                     <m:MaterialLink iconType="POLYMER" />
                 </m:MaterialNavSection>
@@ -35,9 +36,9 @@
         </m:MaterialHeader>
 
         <m:MaterialSideNavPush m:id="sidenav" width="280">
-            <m:MaterialLink text="Link 1" iconType="POLYMER"/>
-            <m:MaterialLink text="Link 2" iconType="POLYMER"/>
-            <m:MaterialLink text="Link 3" iconType="POLYMER"/>
+            <m:MaterialLink text="Link 1" />
+            <m:MaterialLink text="Link 2" />
+            <m:MaterialLink text="Link 3" />
         </m:MaterialSideNavPush>
 
         <m:MaterialContainer ui:field="container">

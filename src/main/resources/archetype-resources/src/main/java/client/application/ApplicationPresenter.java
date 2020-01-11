@@ -19,15 +19,20 @@
  */
 package ${package}.client.application;
 
+import ${package}.client.resources.AppResources;
 import com.google.gwt.event.shared.GwtEvent;
+import com.gwtplatform.mvp.client.annotations.ContentSlot;
+import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
+import com.google.gwt.dom.client.StyleInjector;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
-import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.Proxy;
-import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
+import gwt.material.design.addins.client.dark.AddinsDarkThemeLoader;
+import gwt.material.design.client.theme.dark.CoreDarkThemeLoader;
+import gwt.material.design.client.theme.dark.DarkThemeManager;
 
 public class ApplicationPresenter
         extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy> {
@@ -46,5 +51,19 @@ public class ApplicationPresenter
             MyView view,
             MyProxy proxy) {
         super(eventBus, view, proxy, RevealType.Root);
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        // Dark Theme Mode
+        DarkThemeManager.get()
+            .register(new CoreDarkThemeLoader())
+            .register(new AddinsDarkThemeLoader())
+            .register(new AppDarkThemeLoader())
+            .load();
+
+        StyleInjector.inject(AppResources.INSTANCE.appCss().getText());
     }
 }
