@@ -1,11 +1,11 @@
 # gwt-material-pwa-archetype
 PWA (Progressive Web App) + GMD Archetype
 
-# Current Version - 2.3.0
+# Current Version - 2.3.1
 ### Includes
 - Updated GWT Version to 2.8.2
 - Updated GWTP Version to 1.5.3
-- Updated GMD Version to 2.3.0
+- Updated GMD Version to 2.3.1
 
 # Usage:
 1. Download the archetype
@@ -27,7 +27,7 @@ PWA (Progressive Web App) + GMD Archetype
 
         mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign \
           -DarchetypeArtifactId=gwt-material-pwa-archetype \
-          -DarchetypeVersion=2.3.0 \
+          -DarchetypeVersion=2.3.1 \
           -DgroupId=your.company.domain \
           -Dpackage=your.company.domain.myapp \
           -DartifactId=your-project \
@@ -39,7 +39,7 @@ PWA (Progressive Web App) + GMD Archetype
         mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign 
          -DarchetypeArtifactId=gwt-material-pwa-archetype 
          -DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots/
-         -DarchetypeVersion=2.3-SNAPSHOT
+         -DarchetypeVersion=2.3.2-SNAPSHOT
      
 # Test/Run
 
