@@ -10,7 +10,7 @@ PWA (Progressive Web App) + GMD Archetype
 # Usage:
 1. Download the archetype
 2. From the download folder, install the archetype in your local Maven repo by running this command: <code>mvn clean install</code>
-3. Create a new project by running the following command in a folder of your choice: <code>mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-pwa-archetype -DarchetypeVersion=2.3</code>
+3. Create a new project by running the following command in a folder of your choice: <code>mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-pwa-archetype -DarchetypeVersion=2.3.1</code>
 4. Follow the prompts
 
         mvn clean install archetype:update-local-catalog
@@ -19,7 +19,7 @@ PWA (Progressive Web App) + GMD Archetype
 
         mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign \
           -DarchetypeArtifactId=gwt-material-pwa-archetype \
-          -DarchetypeVersion=2.3.0
+          -DarchetypeVersion=2.3.1
 
 4. Follow the prompts. That's it!
 
