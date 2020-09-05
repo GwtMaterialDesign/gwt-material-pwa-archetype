@@ -17,9 +17,7 @@ PWA (Progressive Web App) + GMD Archetype
 
 3. Create a new project by running the following command in a folder of your choice:
 
-        mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign
-          -DarchetypeArtifactId=gwt-material-pwa-archetype
-          -DarchetypeVersion=2.4.0
+        mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-pwa-archetype -DarchetypeVersion=2.4.0
 
 4. Follow the prompts. That's it!
 
