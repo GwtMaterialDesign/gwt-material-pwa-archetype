@@ -1,11 +1,11 @@
 # gwt-material-pwa-archetype
 PWA (Progressive Web App) + GMD Archetype
 
-# Current Version - 2.4.0
+# Current Version - 2.4.1
 ### Includes
 - Updated GWT Version to 2.9.0
 - Updated JQuery Version to 3.5.1
-- Updated GMD Version to 2.4.0
+- Updated GMD Version to 2.4.1
 
 # Usage:
 1. Download the archetype
@@ -19,7 +19,7 @@ PWA (Progressive Web App) + GMD Archetype
 
         mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign \
           -DarchetypeArtifactId=gwt-material-pwa-archetype \
-          -DarchetypeVersion=2.4.0
+          -DarchetypeVersion=2.4.1
 
 4. Follow the prompts. That's it!
 
@@ -27,7 +27,7 @@ PWA (Progressive Web App) + GMD Archetype
 
         mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign \
           -DarchetypeArtifactId=gwt-material-pwa-archetype \
-          -DarchetypeVersion=2.4.0 \
+          -DarchetypeVersion=2.4.1 \
           -DgroupId=your.company.domain \
           -Dpackage=your.company.domain.myapp \
           -DartifactId=your-project \
