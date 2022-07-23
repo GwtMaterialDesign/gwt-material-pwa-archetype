@@ -1,22 +1,22 @@
 # gwt-material-pwa-archetype
 PWA (Progressive Web App) + GMD Archetype
 
-# Current Version - 2.5.0
+# Current Version - 2.6.0
 ### Includes
-- Updated GWT Version to 2.8.2
+- Updated GWT Version to 2.9
 - Updated GWTP Version to 1.5.3
-- Updated GMD Version to 2.5.0
+- Updated GMD Version to 2.6.0
 
 # Usage:
 1. Download the archetype
 2. From the download folder, install the archetype in your local Maven repo by running this command: <code>mvn clean install</code>
-3. Create a new project by running the following command in a folder of your choice: <code>mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-pwa-archetype -DarchetypeVersion=2.5.0</code>
+3. Create a new project by running the following command in a folder of your choice: <code>mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-pwa-archetype -DarchetypeVersion=2.6.0</code>
 4. Follow the prompts
 
         mvn clean install archetype:update-local-catalog
 
 3. Create a new project by running the following command in a folder of your choice:
-        mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-pwa-archetype -DarchetypeVersion=2.5.0
+        mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-pwa-archetype -DarchetypeVersion=2.6.0
 
 
 4. Follow the prompts. That's it!
@@ -25,7 +25,7 @@ PWA (Progressive Web App) + GMD Archetype
 
         mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign \
           -DarchetypeArtifactId=gwt-material-pwa-archetype \
-          -DarchetypeVersion=2.5.0 \
+          -DarchetypeVersion=2.6.0 \
           -DgroupId=your.company.domain \
           -Dpackage=your.company.domain.myapp \
           -DartifactId=your-project \
@@ -37,7 +37,7 @@ PWA (Progressive Web App) + GMD Archetype
         mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign 
          -DarchetypeArtifactId=gwt-material-pwa-archetype 
          -DarchetypeRepository=https://oss.sonatype.org/content/repositories/snapshots/
-         -DarchetypeVersion=2.5.0-SNAPSHOT
+         -DarchetypeVersion=2.6.1-SNAPSHOT
      
 # Test/Run
 
